@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>Homework 2</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Kelvin Ai">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body onload="prev()">
+  <div id="problem1" >
+    <input id="p1-next" type="submit" value="Next" onclick="next()">
+    <div id="content1">
+      <h2>Problem 1:</h2>
+      Write a JS function:
+      <ol>
+        <li>There are unlimited numbers of 1&#162;, 5&#162;, 25&#162;, 50&#162;</li>
+        <li>Pick 48 coins to have 1 dollar</li>
+        <li>Identify
+          <select id="p1-val" onchange="p1()">
+            <option value="1"> 1 </option>
+            <option value="2" selected> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+          </select>
+            solutions</li>
+      </ol>
+      <!-- <input id="p1-submit" type="submit" value="Run!" onclick="p1()"><br> -->
+      Results:
+      <table id="p1-res"></table>
+    </div>
+  </div>
+
+  <div id="problem2">
+    <input id="p2-prev" type="submit" value="Back" onclick="prev()">
+    <div id="content2">
+      <h2>Problem 2:</h2>
+      Create a deck of card <br>
+      A deck of cards consists of 52 cards.<br>
+      It looks like this:<br>
+      1 of Spades, 2 of Spades, 3 of Spades,... 13 of Spades.<br>
+      1 of Hearts, 2 of Hearts, 3 of Hearts, ...13 of Hearts.<br>
+      1 of Diamonds, 2 of Diamonds, 3 of Diamonds,...13 of Diamonds.<br>
+      1 of Clubs, 2 of Clubs, 3 of Clubs...13 of Clubs.<br><br>
+      <input id="p2-submit" type="submit" value="List all Cards" onclick="p21()">
+      <input id="p2-submit" type="submit" value="Shuffle with same suit" onclick="p22()">
+      <input id="p2-submit" type="submit" value="Shuffle all" onclick="p23()"><br>
+      Results:
+      <div id="p2-res" style="font-size: 1.2em"></div>
+    </div>
+  </div>
+
+  <div id="problem3">
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
